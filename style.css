@@ -1,0 +1,177 @@
+/* CSS Styles */
+*{
+    font-family: 'Changa', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(226, 228, 222);
+    background-image: url(images/GeoBackground.avif);
+    margin: 0;
+}
+h1 {
+    font-size: 2.5rem;
+color: rgb(0, 0, 0);
+}
+h2 {
+    font-size: 2rem;
+color: rgb(0, 0, 0);
+}
+p, ul, ol {
+    font-size: 1rem;
+color: rgb(7, 133, 244);
+}
+a:link {
+    color: #397eeb;
+    text-decoration: none;
+}
+a:hover, a:visited {
+    color: blue;
+    text-decoration: underline;
+}
+img {
+    max-width: 100%;
+}
+
+/* Button Style */
+.button a:link, .button a:visited {
+    color: #666;
+    border: #666 thin solid;
+    border-radius: 12px;
+    padding: 10px 0;
+    display: block;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.button a:hover {
+    border: #000 thin solid;
+    color: white;
+    background-color: darkgreen;
+}
+
+/* Header Styles */
+header {
+    background-color: #000;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    padding: 0 5%;
+    text-transform: uppercase;
+    height: 90px;
+}
+header h1 {
+    grid-column: 1 / span 6;
+    margin-top: 15px;
+}
+header h1 a:link,
+header h1 a:hover,
+header h1 a:visited {
+    color:  white;
+    text-decoration: none;
+}
+header nav {
+    grid-column: 7 / span 6;
+}
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+header nav li a:link,
+header nav li a:hover,
+header nav li a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+}
+
+
+
+
+
+
+.pic {
+    width: 300px;
+}
+
+.container {
+    background-color: whitesmoke;
+    width: 90%;
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 35px 5% 0 5%;
+}
+
+/* Homepage content style */
+.home {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+.about {
+    grid-column: 1 / span 8;
+    padding: 0 5% 2rem 0;
+}
+.photo {
+    grid-column: 9 / span 4;
+}
+
+
+
+/* Work Page Content Styles */
+.work {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.work div {
+    text-align: center;
+    padding: 0 5% 5% 5%;
+}
+
+
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin: .5rem 3.5rem;
+    border-top: #666 solid thin;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer ul a {
+    display: block;
+    padding: 0 .5rem;
+}
+
+.work img {
+    border-radius: 5%;
+}
+
+
+/* Media Queries for responsive website */
+@media (max-width: 600px) {
+   .about, .photo {
+        grid-column: 1/ span 12;
+   }
+   .work {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
+.project_1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000;
+}
